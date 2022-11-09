@@ -19,14 +19,14 @@
   }
 ]
 
-## To see invidivual election:
+### To see invidivual election:
 * GET api/v1/elections/:election_id
 
 {
   "name": "Food Preferences"
 }
 
-## To see list of ballots for an election:
+### To see list of ballots for an election:
 * GET api/v1/elections/:election_id/balllots
 
 [
@@ -55,7 +55,7 @@
   }
 ]
 
-## To see invidivual ballots for an election:
+### To see invidivual ballots for an election:
 * GET api/v1/elections/:election_id/balllots/:ballot_id
 
 {
@@ -77,7 +77,7 @@
   "user_id": 1
 }
 
-## To vote for an election ballot:
+### To vote for an election ballot:
 * POST api/v1/elections/:election_id/balllots/:ballot_id/votes
 
 [
@@ -88,7 +88,7 @@
   }
 ]
 
-## To see list of vote for an election ballot:
+### To see list of vote for an election ballot:
 * GET api/v1/elections/:election_id/balllots/:ballot_id/votes
 
 [
@@ -103,7 +103,7 @@
   }
 ]
 
-## To adjust the vote for an election ballot:
+### To adjust the vote for an election ballot:
 * PATCH api/v1/elections/:election_id/balllots/:ballot_id/votes/:votes_id
 
 [
