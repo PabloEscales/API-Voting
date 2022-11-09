@@ -1,9 +1,11 @@
 # Documentation on how to use the API.
 * Dev: Pablo Escales
 
-
 ## Project name: Assembly Voting Technical Assignment
 * The goal is to write a voting application API.
+
+## DB diagram link:
+* https://dbdiagram.io/d/636b7c3bc9abfc61117155d8
 
 ## Main endpoints:
 
@@ -26,14 +28,11 @@
 ### To see invidivual election:
 * GET api/v1/elections/:election_id
 
-
-[
-  {
-
-    "name": "Food Preferences"
+{
   
-  }
-]
+  "name": "Food Preferences"
+
+}
 
 ### To see list of ballots for an election:
 * GET api/v1/elections/:election_id/balllots
@@ -90,28 +89,24 @@
 ## To register a user in one of the elections:
 * POST api/v1/registrations
 
-[
-  {
+{
 
-    "id": 1,
-    "election_id": 1,
-    "user_id": 1
-  
-  }
-]
+  "id": 1,
+  "election_id": 1,
+  "user_id": 1
+ 
+}
 
 ### To vote for an election ballot:
 * POST api/v1/elections/:election_id/balllots/:ballot_id/votes
 
-[
-  {
+{
   
-    "id": 1,
-    "registration_id": 1,
-    "value": "Vanilla, Chocolate, Toast, Pasta"
+  "id": 1,
+  "registration_id": 1,
+  "value": "Vanilla, Chocolate, Toast, Pasta"
     
-  }
-]
+}
 
 ### To see list of vote for an election ballot:
 * GET api/v1/elections/:election_id/balllots/:ballot_id/votes
