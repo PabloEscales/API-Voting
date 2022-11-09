@@ -29,7 +29,7 @@
 ### To see list of ballots for an election:
 * GET api/v1/elections/:election_id/balllots
 
-[
+"[
   {
     "name": "Best Ice Cream flavour",
     "type": "multiple-choice",
@@ -53,7 +53,7 @@
     "type": "write-in",
     "options": ""
   }
-]
+]"
 
 ### To see invidivual ballots for an election:
 * GET api/v1/elections/:election_id/balllots/:ballot_id
