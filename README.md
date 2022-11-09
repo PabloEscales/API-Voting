@@ -2,12 +2,12 @@
 * Dev: Pablo Escales
 
 
-# Project name: Assembly Voting Technical Assignment
+## Project name: Assembly Voting Technical Assignment
 * The goal is to write a voting application API.
 
 * Main endpoints:
 
-# To see elections list:
+## To see elections list:
 * GET api/v1/elections
 
 [
@@ -19,14 +19,14 @@
   }
 ]
 
-# To see invidivual election:
+## To see invidivual election:
 * GET api/v1/elections/:election_id
 
 {
   "name": "Food Preferences"
 }
 
-# To see list of ballots for an election:
+## To see list of ballots for an election:
 * GET api/v1/elections/:election_id/balllots
 
 [
@@ -55,7 +55,7 @@
   }
 ]
 
-# To see invidivual ballots for an election:
+## To see invidivual ballots for an election:
 * GET api/v1/elections/:election_id/balllots/:ballot_id
 
 {
@@ -68,7 +68,7 @@
     Cookie Dough"
 }
 
-# To register a user in one of the elections:
+## To register a user in one of the elections:
 * POST api/v1/registrations
 
 {
@@ -77,7 +77,7 @@
   "user_id": 1
 }
 
-# To vote for an election ballot:
+## To vote for an election ballot:
 * POST api/v1/elections/:election_id/balllots/:ballot_id/votes
 
 [
@@ -88,7 +88,7 @@
   }
 ]
 
-# To see list of vote for an election ballot:
+## To see list of vote for an election ballot:
 * GET api/v1/elections/:election_id/balllots/:ballot_id/votes
 
 [
@@ -103,7 +103,7 @@
   }
 ]
 
-# To adjust the vote for an election ballot:
+## To adjust the vote for an election ballot:
 * PATCH api/v1/elections/:election_id/balllots/:ballot_id/votes/:votes_id
 
 [
