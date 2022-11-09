@@ -5,9 +5,9 @@
 ## Project name: Assembly Voting Technical Assignment
 * The goal is to write a voting application API.
 
-* Main endpoints:
+## Main endpoints:
 
-## To see elections list:
+### To see elections list:
 * GET api/v1/elections
 
 [
